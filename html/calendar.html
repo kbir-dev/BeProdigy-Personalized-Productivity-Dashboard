@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BeProdigy - Personalized Productivity Tracker</title>
-    <link rel="stylesheet" href="../css/overview.css">
+    <title>BeProdigy - Calendar</title>
+    <link rel="stylesheet" href="../css/calendar.css">
 </head>
 
 <body>
@@ -22,22 +22,12 @@
             <nav>
                 <ul>
                     <li><a href="manage_tasks.html">Manage Tasks</a></li>
-                    <li><a href="#">Overview</a></li>
-                    <li><a href="calendar.html">Calendar</a></li>
+                    <li><a href="overview.html">Overview</a></li>
+                    <li><a href="#">Calendar</a></li>
                 </ul>
             </nav>
         </header>
         <section class="content">
-            <!-- greeting -->
-            <div class="greeting_container">
-                <div class="greeting-content">
-                    <h5>Hi,</h5>
-                    <p>Good morning, <span>Karan</span></p>
-                    <p>Stay on Track, Stay Unstoppable</p>
-                </div>
-            </div>
-
-            <!-- Calendar -->
             <div class="calendar_container">
                 <div class="calendar_top_row">
                     <h5>Calendar</h5>
@@ -114,89 +104,22 @@
                     <div class="date">31</div>
                 </div>
             </div>
-
-            <!-- tasktracker -->
-            <div class="tasktracker_container">
-                <div class="tasktracker_text_container">
-                    <h5>Total Tasks Today</h5>
-                    <p>8</p>
-                    <h5>Completed Tasks Today</h5>
-                    <p>0</p>
+            </div>
+            <div class="form-container">
+                <h3>Schedule On Calendar</h3>
+                <div class="form">
+                    <label for="taskName">Task: </label>
+                    <input type="text" name="taskName" id="taskName" placeholder="Enter Task Name">
+                        <label for="fromTime">From:</label>
+                        <input type="time" id="fromTime" name="fromTime" value="00:00">
+                        <label for="toTime">To:</label>
+                        <input type="time" id="toTime" name="toTime" value="00:00">
+                    <label for="color-picker">Color:</label>
+                    <input type="color" id="color-picker" name="color-picker" value="#00a7e1">
+                    <br>
+                    <input type="submit" value="Add Task" id="submit">
                 </div>
             </div>
-
-            <!-- stopwatch -->
-            <div class="stopwatch_container">
-                <h5>Track Time</h5>
-                <div class="stopwatch">
-                    <div class="stopwatch_timer">
-                        <p>00:00:00</p>
-                    </div>
-                    <div class="stopwatch_bar"></div>
-                </div>
-                <div class="stopwatch_btns">
-                    <button>Start</button>
-                    <button>Reset</button>
-                </div>
-            </div>
-
-            <!-- Tasks -->
-            <div class="tasks_container">
-                <div class="tasks_container_top_row">
-                    <h5>Tasks</h5>
-                    <select name="taskHours" id="taskHours" default="24">
-                        <option value="5">5</option>
-                        <option value="6">6</option>
-                        <option value="7">7</option>
-                        <option value="8">8</option>
-                        <option value="9">9</option>
-                        <option value="10">10</option>
-                        <option value="11">11</option>
-                        <option value="12">12</option>
-                        <option value="13">13</option>
-                        <option value="14">14</option>
-                        <option value="15">15</option>
-                        <option value="16">16</option>
-                        <option value="17">17</option>
-                        <option value="18">18</option>
-                        <option value="19">19</option>
-                        <option value="20">20</option>
-                        <option value="21">21</option>
-                        <option value="22">22</option>
-                        <option value="23">23</option>
-                        <option value="24" selected>24</option>
-                    </select>
-                </div>
-                <div class="task_drag_drop_container">
-                    <div class="slot">00:00</div>
-                    <div class="slot">01:00</div>
-                    <div class="slot">02:00</div>
-                    <div class="slot">03:00</div>
-                    <div class="slot">04:00</div>
-                    <div class="slot">05:00</div>
-                    <div class="slot">06:00</div>
-                    <div class="slot">07:00</div>
-                    <div class="slot">08:00</div>
-                    <div class="slot">09:00</div>
-                    <div class="slot">10:00</div>
-                    <div class="slot">11:00</div>
-                    <div class="slot">12:00</div>
-                    <div class="slot">13:00</div>
-                    <div class="slot">14:00</div>
-                    <div class="slot">15:00</div>
-                    <div class="slot">16:00</div>
-                    <div class="slot">17:00</div>
-                    <div class="slot">18:00</div>
-                    <div class="slot">19:00</div>
-                    <div class="slot">20:00</div>
-                    <div class="slot">21:00</div>
-                    <div class="slot">22:00</div>
-                    <div class="slot">23:00</div>
-                    <div class="activity1">Sleep</div>
-                    <div class="activity2">DSA</div>
-                    <div class="activity3">Project</div>
-                    <div class="activity4">Game</div>
-                </div>
             </div>
         </section>
     </main>
